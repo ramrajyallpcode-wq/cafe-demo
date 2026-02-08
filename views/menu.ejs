@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krrunch || Menu List</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/rawcss.css" />
+    <link rel="icon" href="/images/krrunch_logo.png" type="image/png">
+    <!-- font links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/node_modules/tw-elements/dist/css/index.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- header -->
+    <header><%- include("./components/header");%></header>
+
+
+
+    <section>
+        <div class="w-full">
+            <div class="w-full h-[65vh] overflow-hidden relative"
+                style="background-image: url('/images/menu-banner.png'); background-repeat: no-repeat; background-size: cover;">
+                <div class="w-full h-full flex flex-col justify-center items-center pt-10">
+                    <div class="mb-5 flex flex-col justify-center items-center gap-1 card" data-aos="zoom-in-up">
+                        <h2 class="mb-3 text-sm font-semibold  uppercase text-krrunch3 tracking-[0.2rem]">Traditional &
+                            Hygiene</h2>
+                        <div class="w-[100px]">
+                            <img src="/images/icon1.svg" alt="icon1">
+                        </div>
+                    </div>
+                    <div class="w-max card text-white font-merry" data-aos="zoom-in-up">
+                        <h2 class="text-6xl w-max  tablet2:font-medium tablet1:text-2xl">MENU
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="menu-list">
+        <div class="w-full lg:p-20 md:p-10 p-5 tablet1:px-5 bg-krrunch2">
+
+            <div class="w-full mx-auto mb-5">
+                <img class="w-full" src="/images/menu1.jpeg" alt="menu1" />
+            </div>
+            <div class="w-full mx-auto mb-5">
+                <img class="w-full" src="/images/menu2.jpeg" alt="menu2" />
+            </div>
+
+            
+            <!-- <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up" data-aos-delay="1400">
+                    <div class="w-full overflow-hidden">
+                        <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300" src="/images/nlis1.jpg" alt="">
+                    </div>
+                    <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+                        <h2 class="text-2xl   tablet2:font-semibold tablet1:text-2xl text-center">Noodels
+                        </h2>
+                        <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+        
+                            </div>
+                            <span class="inline-block font-medium">40</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>-->
+            
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <%-include("./components/footer");%>
+
+
+
+
+
+
+
+
+
+
+        <!-- script -->
+        <script>
+            function toggleOverlay() {
+                var real = $('.side-overlay').find('.real');
+                var virtual = $('.side-overlay').find('.virtual');
+                if (real.hasClass('-translate-x-full')) {
+                    $('.side-overlay').fadeIn(0);
+                    virtual.fadeIn(100);
+                    real.removeClass('-translate-x-full');
+                    $('body').css('overflow', 'hidden');
+                } else {
+                    virtual.fadeOut(100);
+                    real.addClass('-translate-x-full');
+                    $('.side-overlay').fadeOut(150);
+                    $('body').css('overflow', 'auto');
+                }
+            }
+        </script>
+
+
+        <!-- tailwind element -->
+        <script src="/dist/js/index.min.js"></script>
+
+
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 120,
+                duration: 2300
+            });
+        </script>
+
+        <!-- header fixed -->
+        <script>
+            window.addEventListener("scroll", () => {
+                const windowHeight = window.innerHeight;
+                if (window.scrollY >= 0.015 * windowHeight) {
+                    if (window.innerWidth >= 640) {
+                        document
+                            .getElementById("header").style.top = "-51px"
+                    }
+                    else {
+                        document
+                            .getElementById("header").style.top = "0px"
+                    }
+
+                    document.getElementById("header").style.backgroundColor = "#171819"
+                } else {
+                    document
+                        .getElementById("header").style.top = "0px"
+                    document.getElementById("header").style.backgroundColor = "transparent";
+                }
+            });
+        </script>
+
+
+
+</body>
+
+</html>

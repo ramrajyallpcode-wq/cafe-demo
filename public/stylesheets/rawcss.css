@@ -1,0 +1,197 @@
+
+  input:focus-visible, textarea:focus-visible{
+    outline: none;
+  }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      background-color: transparent !important;
+    }
+
+
+    .swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* transform: scale(1.2);
+    transition: all ease-in-out 0.2s;
+    animation: imagePopUp 5s  0.2s 1; */
+    /* object-fit: contain; */
+  }
+
+  .slider-image-popup{
+    transition: all ease-in-out 0.2s;
+    animation: imagePopUp 3s  1 linear;
+    transform: scale(1.2);
+  }
+
+  @keyframes imagePopUp {
+        0%{
+            transform: scale(1.0);
+        }
+        100%{
+            transform: scale(1.2);
+
+        }
+
+  }
+
+  /* .menuhover > a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    display: block;
+    height: 6px;
+    border-bottom: 2px #E4C590 solid;
+    border-top: 2px #E4C590 solid;
+    transform: scale(0);
+    transition: all ease-in-out 300ms;
+  } */
+
+  /* .menuhover:hover > a:before{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  } */
+  .menuhover:hover > a{
+    color: #E4C590;
+  }
+.sidebarmenuhover:hover  span{
+  display: inline-block;
+  margin-left: 10px;
+  transition: all ease-in-out 300ms;
+}
+  .book-a-table::before{
+    transition: all ease-in-out ;
+    animation: book-a-table-motion infinite 15s linear;
+  }
+
+  @keyframes book-a-table-motion {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width:768px) {
+    .swiper-mybuttons{
+      display: none !important;
+    }
+  }
+
+  .rhombus-img {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s;
+  }
+
+
+  
+
+
+
+  .imagecontainer{
+    margin:50px auto;
+    display:block;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius: 28px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    position:relative;
+    
+   
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
+    
+   }
+   .imagecontainer img{
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); 
+    -webkit-transform: rotate(-45deg);
+    position:absolute;
+    object-fit: cover;
+    top:-10px;
+    left:-10px;
+   }
+
+
+   .wave-container {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin: 60px auto;
+  }
+  .wave-container .delay1 {
+    -webkit-animation: waves 2.5s linear infinite;
+            animation: waves 2.5s linear infinite;
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .wave-container .delay2 {
+    -webkit-animation: waves 2.5s linear infinite 0.7s forwards;
+            animation: waves 2.5s linear infinite 0.7s forwards;
+  }
+  .wave-container .delay3 {
+    -webkit-animation: waves 2.5s linear infinite 1.3s forwards;
+            animation: waves 2.5s linear infinite 1.3s forwards;
+  }
+  .wave-container .delay4 {
+    -webkit-animation: waves 2.5s linear infinite 1.9s forwards;
+            animation: waves 2.5s linear infinite 1.9s forwards;
+  }
+
+  
+ 
+  
+  .wave-container .circle {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    /* border:"1px white solid"; */
+    transition: 5s ease;
+    position: absolute;
+    top: 0px;
+  }
+
+  @keyframes waves {
+    0% {
+      transform: scale(1);
+      background: white;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      background: white;
+      opacity: 0;
+    }
+  }

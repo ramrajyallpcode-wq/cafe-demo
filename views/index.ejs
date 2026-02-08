@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krrunch Cafe</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+
+  <link rel="stylesheet" href="/stylesheets/rawcss.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/krrunch-logo.webp">
+  <!-- font links  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/node_modules/tw-elements/dist/css/index.min.css" /> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- swiper link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- header -->
+  <header><%- include("./components/header");%></header>
+
+  <!-- swipper-seciton -->
+  <!-- slider-section -->
+  <div class="h-[110vh] relative font-merry">
+    <div class="w-full h-full swiper-container overflow-hidden">
+      <div class="swiper-wrapper">
+
+        <!-- first slide -->
+        <div class="swiper-slide w-full h-full relative overflow-hidden">
+          <img class="slider-image-popup slider-img object-cover" src="/images/banner-1.webp" alt="">
+          <div
+            class="card absolute w-full h-full flex justify-center items-center text-white bg-krrunch4 pt-[5vh] left-0 top-0">
+            <div class="relative flex flex-col justify-center items-center gap-4">
+              <div class="mb-5 flex flex-col justify-center items-center gap-1 card" data-aos="zoom-in-up">
+                <h2 class="mb-3 text-sm font-semibold tracking-[0.2rem] uppercase text-krrunch3">Traditional & Hygiene</h2>
+                <div class="w-[100px]">
+                  <img src="/images/icon1.svg" alt="icon1">
+                </div>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">Flavours Inspired From
+                </h2>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">the Seasons</h2>
+              </div>
+              <div class="card w-full px-2" data-aos="zoom-in-up">
+                <span class="text-lg font-normal tablet:text-sm">Come With the family & feel the joy of mouthsweeting
+                  food</span>
+              </div>
+              <div class="mt-10 card" data-aos="zoom-in-up">
+                <div class="w-max">
+                  <a href="/menu" type="button"
+                    class="inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+                    <span>
+                      Discover More1
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second slide -->
+        <div class="swiper-slide w-full h-full relative overflow-hidden">
+          <img class="slider-img slider-image-popup object-cover" src="/images/banner-2.webp" alt="">
+          <div
+            class="card absolute w-full h-full flex justify-center items-center text-white bg-krrunch4 pt-[5vh] left-0 top-0">
+            <div class="flex flex-col justify-center items-center gap-4">
+              <div class="mb-5 flex flex-col justify-center items-center gap-1 card" data-aos="zoom-in-up">
+                <h2 class="mb-3 text-sm font-semibold tracking-wide uppercase text-krrunch3">Traditional & Hygiene</h2>
+                <div class="w-[100px]">
+                  <img src="/images/icon1.svg" alt="icon1">
+                </div>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">Flavours Inspired From
+                </h2>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">the Seasons</h2>
+              </div>
+              <div class="card w-full px-2" data-aos="zoom-in-up">
+                <span class="text-lg font-normal tablet:text-sm">Come With the family & feel the joy of mouthsweeting
+                  food</span>
+              </div>
+              <div class="mt-10 card" data-aos="zoom-in-up">
+                <div class="w-max">
+                  <a href="/menu" type="button"
+                    class="relative z-[1] inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+                    <span>
+                      Discover More
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third slide -->
+        <div class="swiper-slide w-full h-full relative overflow-hidden">
+          <img class="slider-img slider-image-popup object-cover" src="/images/banner-3.webp" alt="">
+          <div
+            class="card absolute w-full h-full flex justify-center items-center text-white bg-krrunch4 pt-[5vh] left-0 top-0">
+            <div class="flex flex-col justify-center items-center gap-4">
+              <div class="mb-5 flex flex-col justify-center items-center gap-1 card" data-aos="zoom-in-up">
+                <h2 class="mb-3 text-sm font-semibold  uppercase text-krrunch3 tracking-[0.2rem]" >Traditional & Hygiene</h2>
+                <div class="w-[100px]">
+                  <img src="/images/icon1.svg" alt="icon1">
+                </div>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">Flavours Inspired From
+                </h2>
+              </div>
+              <div class="w-max card" data-aos="zoom-in-up">
+                <h2 class="w-max lg:text-6xl md:text-4xl sm:text-3xl text-2xl ">the Seasons</h2>
+              </div>
+              <div class="card w-full px-2" data-aos="zoom-in-up">
+                <span class="text-lg font-normal tablet:text-sm">Come With the family & feel the joy of mouthsweeting
+                  food</span>
+              </div>
+              <div class="mt-10 card" data-aos="zoom-in-up">
+                <div class="w-max">
+                  <a href="/menu"  type="button"
+                    class="relative z-[1] inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+                    <span>
+                      Discover More
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-mybuttons swiper-button-next border-1 border-white" style="color: #E4C590;"></div>
+      <div class="swiper-mybuttons swiper-button-prev md:hidden" style="color: #E4C590;"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- home2nd components -->
+  <section class="we-offer-top-notch">
+    <div class="w-full min-h-[110vh] bg-krrunch pt-[100px] pb-50px tablet:pt-10">
+      <div class=" flex flex-col justify-center items-center p-5 mb-10">
+        <div class="mb-5 flex flex-col justify-center items-center gap-1">
+          <h2 class="mb-3 text-sm font-semibold  uppercase text-krrunch3 text-center tracking-[0.2rem]">Traditional &
+            Hygiene</h2>
+          <div class="w-[100px]">
+            <img src="/images/icon1.svg" alt="icon1">
+          </div>
+        </div>
+        <h2 class="font-merry text-4xl text-white py-2 pb-5  text-center">We Offer Top Notch</h2>
+        <div class="text-center font-normal text-white w-2/5 tablet1:w-full">
+         
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-around overflow-hidden">
+        <div class="tablet:mb-5 mb-10" data-aos="fade-right">
+          <div class="w-[300px] h-[450] overflow-hidden rounded-2xl">
+            <img class="w-full h-full object-cover hover:scale-125 ease-in-out duration-[500ms]"
+              src="/images/dinner.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center items-center p-5">
+            <h2 class="font-merry text-white text-3xl">Dinner</h2>
+            <!-- <li class="menuhover list-none p-4"><a href="#"
+                class="relative ease-in-out duration-300 text-krrunch3 font-medium text-sm ">VIEW MENU</a></li> -->
+          </div>
+        </div>
+        <div class="tablet:mb-5 mb-10" data-aos="fade-down">
+          <div class="w-[300px] h-[450] overflow-hidden rounded-2xl">
+            <img class="w-full h-full object-cover hover:scale-125 ease-in-out duration-[500ms]"
+              src="/images/event.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center items-center p-5">
+            <h2 class="font-merry text-white text-3xl">Event</h2>
+            <!-- <li class="menuhover list-none p-4"><a href="#"
+                class="relative ease-in-out duration-300 text-krrunch3 font-medium text-sm ">VIEW MENU</a></li> -->
+          </div>
+        </div>
+        <div class="tablet:mb-5 mb-10" data-aos="fade-left">
+          <div class="w-[300px] h-[450] overflow-hidden rounded-2xl">
+            <img class="w-full h-full object-cover hover:scale-125 ease-in-out duration-[500ms]"
+              src="/images/party.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center items-center p-5">
+            <h2 class="font-merry text-white text-3xl">Party</h2>
+            <!-- <li class="menuhover list-none p-4"><a href="#"
+                class="relative ease-in-out duration-300 text-krrunch3 font-medium text-sm ">VIEW MENU</a></li> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- home 3rd components -->
+  <section class="text-white body-font bg-krrunch2 w-full">
+    <div class="px-20 flex tablet1:px-5 py-24 tablet:py-10 md:flex-row flex-col justify-between items-center w-full">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full  mb-10 md:mb-0 sm:w-full" data-aos="zoom-in-up">
+        <img class="h-full w-full object-cover object-center rounded" alt="hero" src="/images/section-3.webp">
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-12 flex flex-col md:items-start md:text-left items-center text-center">
+        <div class="flex gap-1 text-krrunch3">
+          <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+            </svg>
+          </div>
+          <h2 class="mb-2 font-medium text-krrunch3">ABOUT RESTHO</h2>
+        </div>
+        <h1 class="font-merry sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
+          <br class="hidden lg:inline-block">readymade gluten
+        </h1>
+        <p class="mb-1 leading-relaxed" style="color: #a7a7a7;">Copper mug try-hard pitchfork pour-over freegan heirloom
+          neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot
+          chicken
+          authentic tumeric truffaut hexagon try-hard chambray.</p>
+        <div class="flex flex-wrap w-8/10 mb-8 gap-4 items-center tablet:justify-center" style="color: #a7a7a7;">
+          <!-- <div class="flex gap-2">
+            <div class="w-[60px] h-[60px]">
+              <img class="w-full h-full" src="https://dummyimage.com/60x60" alt="" srcset="">
+            </div>
+            <div class="w-[180px]">
+              <h2 class="font-medium text-lg text-white font-merry">PURE FRESH FOOD</h2>
+              <p>We serve different type of fresh food</p>
+            </div>
+          </div> -->
+          <!-- <div class="flex gap-2 ">
+            <div class="w-[60px] h-[60px]">
+              <img class="w-full h-full" src="https://dummyimage.com/60x60" alt="" srcset="">
+            </div>
+            <div class="w-[180px]">
+              <h2 class="font-medium text-lg text-white font-merry">PURE FRESH FOOD</h2>
+              <p>We serve different type of fresh food</p>
+
+            </div>
+          </div> -->
+        </div>
+        <div class="flex justify-center">
+          <!-- <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> -->
+          <a href="/about"
+            class="inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+            <span>
+              Discover More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- home 4rd components -->
+  <section class="special-dish overflow-hidden">
+    <div class="p-20 bg-krrunch2 tablet1:p-5 tablet:px-2 w-full ">
+      <div
+        class="w-full  h-[100vh] tablet1:h-max bg-krrunch rounded-3xl flex justify-between items-center gap-10 tablet1:flex-wrap tablet1:justify-center tablet1:items-start">
+        <div class="w-1/2 h-full tablet1:w-full ">
+          <img class="rounded-l-3xl w-full h-full object-cover" src="/images//home3.png" alt="" srcset="">
+        </div>
+        <div class="p-4 tablet:p-5 tablet1:w-full w-[45%]  text-white">
+          <div class="flex gap-2 text-krrunch3">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+              </svg>
+            </div>
+            <div class="mb-5 flex flex-col justify-center items-center gap-1">
+              <h2 class="mb-3 text-sm font-semibold tracking-wide uppercase text-krrunch3">Traditional & Hygiene
+              </h2>
+              <div class="w-[100px]">
+                <img src="/images/icon1.svg" alt="icon1">
+              </div>
+            </div>
+          </div>
+          <h2 class="font-merry text-4xl text-white py-2 pb-5">Lobster Tortellini</h2>
+          <p class="text-white">Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum
+            has been the
+            industrys standard dummy text ever since the when an unknown printer took a galley of type.
+          </p>
+          <!-- <div class="flex gap-4 mt-10">
+            <div class="flex items-center text-krrunch5">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block text-xl font-medium">40</span>
+            </div>
+
+            <div class="flex items-center text-krrunch3">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-10 h-10">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block text-2xl font-medium">40</span>
+            </div>
+          </div> -->
+          <div class="mt-10">
+            <div class="w-max overflow-hidden">
+              <a href="/menu"
+                class="inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+                <span>
+                  View All Menu
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- home5th component -->
+  <section class="new-list-item">
+    <div class="min-h-[100vh] w-full relative">
+      <img class="w-full h-full absolute left-0 top-0 object-cover" src="/images/home-bg.png" alt="">
+      <div class="w-full h-full relative p-20 tablet:px-2 phone:px-2 bg-[rgba(0, 0, 0, 40%)]">
+        <div class="flex flex-col items-center">
+          <div class="w-3/5 flex flex-col items-center tablet1:w-full">
+            <div class="flex text-krrunch3 gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
+              <h3 class="mb-3 text-sm font-semibold tracking-wide uppercase text-krrunch3">OUR NEW LIST ITEM
+              </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
+            </div>
+            <h2 class="font-merry text-4xl text-white py-2 tablet:text-2xl text-center">Krrunch New Item List</h2>
+            <p class="text-white text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate, sit dolor?</p>
+          </div>
+        </div>
+        <div class="w-full flex justify-center items-center mt-20 tablet:mt-10">
+
+          <div class="w-[90%] relative tablet1:w-[100%]">
+            <div class="swiper swiper-new-item-list overflow-x-hidden">
+              <div class="swiper-wrapper w-full">
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative tablet:w-full">
+                    <div class="w-[350px] tablet:w-full h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-1.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-2.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-3.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-4.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-5.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-6.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-7.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide overflow-y-visible">
+                  <div class="flex flex-col relative">
+                    <div class="w-[350px] h-[350px] flex justify-center items-center relative ">
+                      <div
+                        class="mx-auto rotate-45 overflow-hidden rounded-[1rem] h-56 w-56 laptop:w-50 laptop:h-50">
+                        <div>
+                          <img
+                            class="mx-auto h-full w-full -rotate-35 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                            src="/images/kr-8.png" alt="man" width="1000" height="667" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <!-- <div class="swiper-button-next after:text-krrunch3  rounded-full hover:bg-krrunch3 hover:after:text-krrunch" style="top: 41%; width: 60px; height: 60px;"></div>
+                      <div class="swiper-button-prev after:text-krrunch3 rounded-full hover:after:text-krrunch  hover:bg-krrunch3" style="top: 41%; width: 60px; height: 60px;"></div> -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div
+              class="absolute p-2 bg-krrunch3 top-[44%] left-[-50px] rounded-full text-white cursor-pointer tablet:hidden"
+              onclick="prvSlide1()" id="prev" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+            </div>
+
+            <div
+              class="absolute p-2 bg-krrunch3 top-[44%] right-[-50px] rounded-full text-white cursor-pointer tablet:hidden"
+              onclick="nextSlide1()" id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- home 6rd components -->
+  <section>
+    <div class="w-full min-h-[100vh] bg-krrunch2 pb-4 px-20 tablet1:px-5">
+      <div class="tablet:px-5 py-8 pt-20 tablet:pt-10 flex flex-col justify-center items-center mx-auto">
+        <div class="w-full flex justify-between phone:flex-col phone:justify-center phone:items-center">
+          <div>
+            <div class="flex gap-1 text-krrunch3 phone:justify-center">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                </svg>
+              </div>
+              <h2 class="mb-2 font-medium text-krrunch3 tablet:text-sm">MENU LIST</h2>
+            </div>
+            <h2 class="font-merry text-4xl text-white py-2 tablet:text-2xl phone:text-center">Find Your Food
+              Item</h2>
+          </div>
+          <div class="flex justify-center items-center w-max">
+            <div class="w-max overflow-hidden rounded-full tablet:text-sm">
+              <a href="/menu"
+                class="inline-flex border-krrunch3 border py-2 px-6 rounded-3xl text-krrunch3 hover:bg-krrunch3 hover:text-krrunch ease-in-out duration-300">
+                <span>
+                  View More
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap mt-10 font-merry text-white">
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="0">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-1.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Noodles
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="200">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-2.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Burger
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="400">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-3.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Fries
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="600">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-4.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Tea & Coffee
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="0">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-5.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Pizza
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="200">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-6.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Sandwich
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="400">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-7.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Ice Cream
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="600">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-8.webp" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Juices
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+         <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="0">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-9.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">BreakFast
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+         <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="200">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-10.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Soups
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+         <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="400">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-11.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Momos
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+         <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="600">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-12.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Shakes
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+       
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="0">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-13.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Starters
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+         <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="200">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-14.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Garlic bread
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="400">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-15.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Pasta
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+  
+        <div class="lg:max-w-[25%] md:max-w-[33.33%] sm:max-w-[50%] w-full lg:p-4 p-2 mb-4" data-aos="zoom-in-up"
+          data-aos-delay="600">
+          <div class="w-full overflow-hidden">
+            <img class="w-full object-cover rounded-2xl hover:scale-110 ease-in-out duration-300"
+              src="/images/menu-home/m-16.png" alt="">
+          </div>
+          <div class="lg:p-4 p2 text-center mt-4 sm:mt-2">
+            <h2 class="text-xl   tablet2:font-medium tablet1:text-xl text-center">Accompaniments
+            </h2>
+            <!-- <div class="flex items-center text-krrunch3 justify-center gap-2 mt-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+              </div>
+              <span class="inline-block font-medium">40</span>
+            </div> -->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- home8th component -->
+  <section class="gallery">
+
+    <div class="w-full px-20 bg-krrunch2 py-20 tablet:py-10 tablet1:px-5 mx-auto">
+      <div class="w-3/5 flex flex-col items-center tablet1:w-full mx-auto mb-10">
+        <div class="flex text-krrunch3 gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+          </svg>
+          <h3 class="mb-3 text-sm font-semibold tracking-wide uppercase text-krrunch3">GALLLERY STORE
+          </h3>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+          </svg>
+        </div>
+        <h2 class="font-merry text-4xl text-white py-2 tablet:text-2xl text-center">Our Special Gallery</h2>
+      </div>
+      <div class="swiper swiper-gallery-store relative overflow-x-hidden">
+        <div class="swiper-wrapper w-full">
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-1.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-6.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-2.png" alt="">
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-3.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-4.png" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide overflow-y-visible ">
+            <div class="w-full h-full p-5 ">
+              <img src="/images/gallery-5.png" alt="">
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div
+          class="absolute z-[2] p-2 bg-krrunch3 top-[44%] left-[50px] rounded-full text-white cursor-pointer tablet1:hidden"
+          onclick="prvSlide()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+        </div>
+
+        <div
+          class="absolute z-[2] p-2 bg-krrunch3 top-[44%] right-[50px] rounded-full text-white cursor-pointer tablet1:hidden"
+          onclick="nextSlide()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- home8th component -->
+  <section>
+    <div class="bg-fixed bg-center min-h-[100vh]"
+      style="background-image: url('/images/parallax-bg.webp'); background-size: cover;">
+      <div class="w-full h-full bg-[rgba(0, 0, 0, 50%)] ">
+        <div class="container px-20 tablet1:px-5 h-full flex flex-col items-center justify-center w-full mx-auto">
+          <div class="w-full">
+            <!-- top -->
+            <div class="w-full my-20 tablet1:my-10">
+              <div class="w-full">
+                <div class="mb-5 flex flex-col justify-center items-center gap-1 w-full">
+                  <h2 class="mb-3 text-sm font-semibold tracking-wide uppercase text-krrunch3">WHY CHOOSE US</h2>
+                  <div class="w-[100px]">
+                    <img src="/images/icon1.svg" alt="icon1">
+                  </div>
+                </div>
+                <h2 class="font-merry text-4xl tablet1:text-3xl text-white py-2 pb-5 text-center">Our Strength</h2>
+              </div>
+            </div>
+
+            <!-- down -->
+            <div class="flex flex-wrap justify-between w-full tablet1:flex-col tablet:items-center">
+
+              <div class="mb-10 rounded flex flex-col items-center max-w-[265px] bg-krrunch py-8 px-2"
+                data-aos="zoom-in-up" data-aos-delay="0">
+                <div class="w-20 p-2 overflow-hidden cursor-pointer">
+                  <img class="w-full hover:scale-110 hover:ease-in-out duration-300" src="/images/s1.png" alt="" srcset="">
+                </div>
+                <h2 class="font-merry text-xl text-white py-2 pb-5">Lobster Tortellini</h2>
+                <p class="text-sm text-krrunch5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Alias, doloremque earum?</p>
+              </div>
+
+              <div class="mb-10 rounded flex flex-col items-center max-w-[265px] bg-krrunch py-8 px-2"
+                data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="w-20 p-2 overflow-hidden cursor-pointer">
+                  <img class="w-full hover:scale-110 hover:ease-in-out duration-300" src="/images/s2.png" alt="" srcset="">
+                </div>
+                <h2 class="font-merry text-xl text-white py-2 pb-5">Fresh Environment</h2>
+                <p class="text-sm text-krrunch5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Alias, doloremque earum?</p>
+              </div>
+
+              <div class="mb-10 rounded flex flex-col items-center max-w-[265px] bg-krrunch py-8 px-2"
+                data-aos="zoom-in-up" data-aos-delay="400">
+                <div class="w-20 p-2 overflow-hidden cursor-pointer">
+                  <img class="w-full hover:scale-110 hover:ease-in-out duration-300" src="/images/s3.png" alt="" srcset="">
+                </div>
+                <h2 class="font-merry text-xl text-white py-2 pb-5">Skilled Chef</h2>
+                <p class="text-sm text-krrunch5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Alias, doloremque earum?</p>
+              </div>
+
+              <div class="mb-10 rounded flex flex-col items-center max-w-[265px] bg-krrunch py-10 px-2"
+                data-aos="zoom-in-up" data-aos-delay="600">
+                <div class="w-20 p-2 overflow-hidden cursor-pointer">
+                  <img class="w-full hover:scale-110 hover:ease-in-out duration-300" src="/images/s4.png" alt="" srcset="">
+                </div>
+                <h2 class="font-merry text-xl text-white py-2 pb-5">Event & Party</h2>
+                <p class="text-sm text-krrunch5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Alias, doloremque earum?</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- footer component -->
+  <%-include("./components/footer");%>
+
+
+
+    <!-- script -->
+    <script>
+      function toggleOverlay() {
+        var real = $('.side-overlay').find('.real');
+        var virtual = $('.side-overlay').find('.virtual');
+        if (real.hasClass('-translate-x-full')) {
+          $('.side-overlay').fadeIn(0);
+          virtual.fadeIn(100);
+          real.removeClass('-translate-x-full');
+          $('body').css('overflow', 'hidden');
+        } else {
+          virtual.fadeOut(100);
+          real.addClass('-translate-x-full');
+          $('.side-overlay').fadeOut(150);
+          $('body').css('overflow', 'auto');
+        }
+      }
+    </script>
+
+
+    <!-- tailwind element -->
+    <script src="/dist/js/index.min.js"></script>
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 2300
+      });
+    </script>
+
+    <!-- header fixed -->
+    <script>
+      window.addEventListener("scroll", () => {
+        const windowHeight = window.innerHeight;
+        if (window.scrollY >= 0.015 * windowHeight) {
+          if (window.innerWidth >= 640) {
+            document
+              .getElementById("header").style.top = "-51px"
+          }
+          else {
+            document
+              .getElementById("header").style.top = "0px"
+          }
+
+          document.getElementById("header").style.backgroundColor = "#171819"
+        } else {
+          document
+            .getElementById("header").style.top = "0px"
+          document.getElementById("header").style.backgroundColor = "transparent";
+        }
+      });
+    </script>
+
+    <!-- slider -->
+
+    <!-- home setcitno top -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper('.swiper-container', {
+        autoplay: {
+          delay: 4000,
+        },
+        effect: "fade",
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            $('.slider-img').removeClass("slider-image-popup")
+            $('.card').hide(0);
+            $('.card').removeClass('aos-init').removeClass('aos-animate');
+
+          },
+          slideChangeTransitionEnd: function () {
+            $('.card').show(0);
+            AOS.init();
+            $('.slider-img').addClass("slider-image-popup")
+          },
+        }
+      }); 
+    </script>
+
+    <!-- home new item list -->
+    <script>
+      let SP = 3;
+      let SF = 40;
+      if (window.innerWidth <= 640) {
+        SP = 1;
+        SF = 0;
+      }
+      else if (window.innerWidth <= 840) {
+        SP = 1.5;
+        SF = 0;
+      }
+      else if (window.innerWidth <= 990) {
+        SP = 2;
+        SF = 20;
+      }
+      else if (window.innerWidth <= 1150) {
+        SP = 2.4;
+        SF = 25;
+      }
+
+
+
+      let swiper1 = new Swiper(".swiper-new-item-list", {
+        slidesPerView: SP,
+        spaceBetween: SF,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: {
+          duration: 2000,
+        },
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // next button home new list item
+      function nextSlide1() {
+        // console.log(swiper1)
+        // alert(swiper1.slides.length)
+        swiper1.slideTo((swiper1.activeIndex + 1))
+      }
+      next.addEventListener("click", nextSlide1);
+
+      function prvSlide1() {
+        // alert(swiper1)
+        swiper1.slideTo((swiper1.activeIndex - 1))
+      }
+      prev.addEventListener("click", prvSlide1);
+    </script>
+
+    
+
+    <!-- -->
+    <script>
+      let SP1 = 3;
+      let SF1 = 40;
+      if (window.innerWidth <= 640) {
+        SP1 = 1;
+        SF1 = 20;
+      }
+      else if (window.innerWidth <= 840) {
+        SP1 = 1.5;
+        SF1 = 40;
+      }
+      else if (window.innerWidth <= 990) {
+        SP1 = 2;
+        SF1 = 20;
+      }
+      else if (window.innerWidth <= 1150) {
+        SP1 = 2.4;
+        SF1 = 25;
+      }
+
+      let swiper2 = new Swiper(".swiper-gallery-store", {
+        slidesPerView: SP1,
+        spaceBetween: SF1,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: {
+          duration: 2000,
+        },
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // next button home new list item
+      function nextSlide() {
+        swiper2.slideTo((swiper2.activeIndex + 1))
+
+      }
+      function prvSlide() {
+        swiper2.slideTo((swiper2.activeIndex - 1))
+      }
+    </script>
+
+
+</body>
+
+</html>
