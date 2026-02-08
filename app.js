@@ -23,9 +23,26 @@ app.use(express.static(path.join(__dirname, "node_modules/tw-elements")));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.listen(850,()=>{
-  console.log("working on 850")
+var port = normalizePort(process.env.PORT || '850');
+app.set('port', port);
+
+app.listen(port, () => {
+  console.log("working on " + port)
 })
+
+function normalizePort(val) {
+  var parsedPort = parseInt(val, 10);
+
+  if (isNaN(parsedPort)) {
+    return val;
+  }
+
+  if (parsedPort >= 0) {
+    return parsedPort;
+  }
+
+  return false;
+}
 
 
 // module.exports = app;
